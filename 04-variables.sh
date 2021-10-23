@@ -21,5 +21,7 @@ y=49
 echo ${x}X${y} = 588
 
 DATE=10-23-2021
+DATE=$(date +%xF)
 echo Good morning, Welcome, Today date is $DATE
+
 
