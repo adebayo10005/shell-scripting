@@ -15,3 +15,8 @@ echo value of a = $a
 echo value of b = $b
 
 echo value of a =${a}
+
+x=12
+y=49
+echo ${x}X${y} = 588
+
