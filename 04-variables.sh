@@ -20,6 +20,6 @@ x=12
 y=49
 echo ${x}X${y} = 588
 
-DATE = 10-20-2021
+DATE=10-20-2021
 echo Good morning, Welcome, Today date is $DATE
 
