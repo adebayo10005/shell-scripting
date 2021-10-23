@@ -24,4 +24,7 @@ DATE=10-23-2021
 DATE=$(date +%xF)
 echo Good morning, Welcome, Today date is $DATE
 
+# Arth substitution
+ADD=$(5+4+5+5+6+5+4)
+
 
