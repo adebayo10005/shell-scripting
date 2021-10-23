@@ -25,7 +25,7 @@ DATE=$(date +%xF)
 echo Good morning, Welcome, Today date is $DATE
 
 # Arth substitution
-ADD=$(5+4+5+5+6+5+4*7/3-5))
+ADD=$((5+4+5+5+6+5+4*7/3-5))
 echo added = $ADD
 
 
