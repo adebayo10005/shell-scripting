@@ -4,7 +4,7 @@
 # SYNTAX: VAR=DATA
 
 # Number
-d=100
+a=100
 # String
 b=abc
 
