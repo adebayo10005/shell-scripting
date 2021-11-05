@@ -32,7 +32,7 @@ resource "aws_security_group" "allow_smart" {
 
         egress = [
                 {
-                        description      = [egress]
+                        description      = ["egress"]
                         from_port        = 0
                         to_port          = 0
                         protocol         = "-1"
