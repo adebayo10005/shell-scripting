@@ -1,10 +1,12 @@
 provider "aws" {
-        region = "us-east-1"
+        region  = "us-east-1"
+        access_key = "AKIAVWKJQ6ZP7IV33EUR"
+        secret_key = "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"
 }
 
 resource "aws_instance" "smart" {
         ami           = "ami-01cc34ab2709337aa"
-        instance_type = "t3.micro"
+        instance_type = "t2.micro"
         vpc_security_group_ids = [aws_security_group.allow_smart.id, "sg-0f9e6ed8764c32142"]
 
         tags = {
