@@ -14,7 +14,7 @@ resource "aws_instance" "smart" {
 
 resource "aws_security_group" "allow_smart" {
         name        = "allow_smart"
-        description = "Allow smart traffic"
+        description = "allow smart traffic"
 
         ingress = [
                 {
