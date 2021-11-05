@@ -1,9 +1,9 @@
-provider "Aws" {
+provider "aws" {
         region  = "us-east-1"
 }
 
 resource "aws_instance" "smart" {
-        ami           = "ami-0dc863062bc04e1de"
+        ami           = "ami-01cc34ab2709337aa"
         instance_type = "t3.micro"
         vpc_security_group_ids = [aws_security_group.allow_smart.id, "sg-0f9e6ed8764c32142"]
 
