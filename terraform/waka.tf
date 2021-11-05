@@ -1,7 +1,5 @@
 provider "aws" {
         region  = "us-east-1"
-        access_key = "AKIAVWKJQ6ZP7IV33EUR"
-        secret_key = "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"
 }
 
 resource "aws_instance" "smart" {
