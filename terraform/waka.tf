@@ -6,6 +6,7 @@ resource "aws_instance" "smart" {
         ami           = "ami-0dc863062bc04e1de"
         instance_type = "t3.micro"
         vpc_security_group_ids = [aws_security_group.allow_smart.id, "sg-0f9e6ed8764c32142"]
+
         tags = {
                 Name = "smart"
         }
@@ -13,8 +14,7 @@ resource "aws_instance" "smart" {
 
 resource "aws_security_group" "allow_smart" {
         name        = "allow_smart"
-        description = "Allow smart"
-        vpc_id      = aws_vpc.main.id
+        description = "Allow smart traffic"
 
         ingress = [
                 {
@@ -27,7 +27,6 @@ resource "aws_security_group" "allow_smart" {
                         prefix_list_ids  = []
                         security_groups  = []
                         self             = false
-
                 }
         ]
 
